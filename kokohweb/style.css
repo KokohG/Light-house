@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    background-color: red;
+    justify-content: center;
+    align-items: top;
+    padding: 20px;
+}
+.text{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+#ptext{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.text2{
+    color: white;
+}
+#off{
+    display: inline-block;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+#on{
+    display: inline-block;
+    background: yellow;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.calculator{
+    display: grid;
+}
+.calculator .value{
+    grid-column: span 4;
+    height: 50px;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+.calculator span{
+    display: grid;
+    height: 60px;
+    width: 120px;
+    place-items: center;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.calculator .clear{
+    grid-column: span 2;
+    width: 250px;
+    background-color: rgb(133, 6, 6);
+    color: #fff;
+}
+.calculator .equal{
+    grid-column: span 2;
+    width: 250px;
+    background-color: rgb(49, 124, 49);
+    color: #fff;
+}
+@media (max-width: 386px){
+    .text{
+        font-size: 18px;
+    }
+    #ptext{
+        font-size: 6px;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
